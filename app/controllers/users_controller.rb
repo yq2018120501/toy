@@ -31,14 +31,13 @@ class UsersController < ApplicationController
     if @user.update(user_params)
       redirect_to @user
     else
-      render 'edit'  
+      render 'edit' 
     end
      
   end
 
   def destroy
     find_user_by_id
-    
     @user.destroy
 
     redirect_to users_path
