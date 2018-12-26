@@ -2,7 +2,7 @@ class UsersController < ApplicationController
   def index
     @users = User.all
   end
-
+#test   
   def show
     find_user_by_id
   end
